@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <title>FilmFlix</title>
+</head>
+<body>
+
+
+    <div class="nav-container">
+        <div class="dropdown-movies">
+            <button id="movies-dropdown-btn">Movies</button>
+            <div class="content">
+                <a href="#" id="popular-movies">Popular</a>
+                <a href="#" id="now-playing">Now Playing</a>
+                <a href="#" id="upcoming-movies">Upcoming</a>
+                <a href="#" id="top-rated">Top Rated</a>
+            </div>
+        </div>
+        </div>
+    
+        <!-- <div class="dropdown-tv">
+            <button>
+                Tv Shows
+            </button>
+        <div class="content">
+            <a href="">Popular</a>
+            <a href="">Airing Today</a>
+            <a href="">On TV</a>
+            <a href="">Top Rated</a>
+        </div>
+        </div>
+    </div> -->
+   
+
+
+    
+    <div class="container">
+        <input type="text" placeholder="Enter Movie Name" id="movie_name">
+    </div>
+        <div class="button_container">
+            <button onclick="getData()" id="submit_btn">Submit</button>
+        </div>
+   
+
+
+    <div class="heading">
+        <h1 id="heading">Now Playing</h1>
+        <div id="movie_grid"  class="movie-grid"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

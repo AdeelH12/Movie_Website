@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #1A1A2E;
+    font-family: "Rubik", sans-serif;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Movie title styling */
+.movie h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+    word-wrap: break-word;
+
+}
+
+.movie h4 {
+
+    font-size: 1rem;
+    margin: 20px;
+    word-wrap: break-word;
+    font-style: italic;
+
+}
+
+
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+}
+
+/* Dropdown styling */
+.dropdown-movies {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+/* Dropdown button */
+.dropdown-movies button {
+    background-color: #333333;
+    color: #f5c518;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-movies button:hover {
+    background-color: #444;
+}
+
+
+.content {
+    display: none;
+    position: absolute;
+    background-color: #232323;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+
+.content a {
+    color: #f5f5f5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease;
+}
+
+.content a:last-child {
+    border-bottom: none;
+}
+
+.content a:hover {
+    background-color: #444;
+    color: #f5c518;
+
+}
+
+/* Show the dropdown content on hover */
+.dropdown-movies:hover .content {
+    display: block;
+}
+
+.nav-container {
+
+    background-color: #120037;
+    border-radius: 25px;
+}
+
+/* Style the container around the input field */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style the input field */
+input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+input[type="text"]:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+
+}
+
+/* Style the button */
+#submit_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#submit_btn:hover {
+    background-color: #e55347;
+}
+
+.button_container {
+
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+#heading {
+
+    color: white;
+    padding: 15px;
+
+}
