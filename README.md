@@ -62,5 +62,6 @@ Movie Explorer is a JavaScript web application powered by [The Movie Database (T
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/AdeelH12/Movie-Explorer.git
-cd Movie-Explorer
+git clone https://github.com/AdeelH12/Movie_Website.git
+cd Movie_Website
+```
